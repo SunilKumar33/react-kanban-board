@@ -1,0 +1,273 @@
+.App {
+  text-align: center;
+}
+
+.main_app {
+  background: #f4f4f4;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.board_txt {
+  font-family: "Roboto";
+  font-size: 26px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #fcc200;
+  text-transform: uppercase;
+}
+
+.card_main {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 92.8vh;
+  display: flex;
+  white-space: nowrap;
+}
+
+.card_main::-webkit-scrollbar {
+  height: 9px;
+}
+
+.card_items::-webkit-scrollbar {
+  width: 9px;
+}
+
+.card_main::-webkit-scrollbar-track {
+  background: #ffffff; /* color of the tracking area */
+  border-radius: 10px;
+}
+
+.card_items::-webkit-scrollbar-track {
+  background: #f4f4f4; /* color of the tracking area */
+  border-radius: 10px;
+}
+
+.card_main::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    162.29deg,
+    #ffe185 -6.85%,
+    #f7ba00 100.08%
+  ); /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+}
+
+.card_items::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    162.29deg,
+    #ffe185 -6.85%,
+    #f7ba00 100.08%
+  ); /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+}
+
+/* For FireFox */
+.card_main {
+  scrollbar-width: thin;
+  scrollbar-color: linear-gradient(162.29deg, #ffe185 -6.85%, #f7ba00 100.08%)
+    #ffffff;
+}
+
+.card_container,
+.card_container_drag {
+  /* width: 295px; */
+  width: 358px;
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  min-height: 66.9vh;
+  box-shadow: 1px 1px 1pxrgba (0, 0, 0, 0.5);
+  border: 1px solid #e9e9e9;
+  vertical-align: top;
+}
+
+.card_container {
+  background: #ffffff;
+}
+
+.card_container_drag {
+  background: #f9f9f9;
+}
+
+.card_head {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(
+    95.67deg,
+    #626262 3.24%,
+    #333333 107.53%
+  ) !important;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.card_sub {
+  padding: 10px;
+  background: #52e272;
+  margin-top: 10px;
+}
+
+.card_head_txt {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.card_total_txt {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10px;
+  color: #3add5e;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+}
+
+.card_items {
+  overflow-y: auto;
+  height: 80.8vh;
+  margin-right: 10px;
+}
+
+.item {
+  border-radius: 1.49909px;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto 10px;
+  height: fit-content;
+  box-shadow: 1px 1px 1pxrgba (0, 0, 0, 0.3);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+}
+
+.item_high {
+  border-left: 5px solid #fe3e3e;
+}
+
+.item_medium {
+  border-left: 5px solid #fc7716;
+}
+
+.item_low {
+  border-left: 5px solid #3add5e;
+}
+
+.item_drag {
+  border-radius: 1.49909px;
+  background: #f4f4f4;
+  box-shadow: none;
+  cursor: grabbing;
+  border: 1px dashed rgba(0, 0, 0.2);
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto 10px;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.card_item_name {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 14px;
+  /* color: #fcc200; */
+  color: #0e0e0e;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: left !important;
+}
+
+.item_sub_text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #969696;
+  white-space: pre-wrap;
+}
+
+.item_border {
+  border-bottom: 1px solid #e9e9e9 !important;
+}
+
+.issue_toDo,
+.issue_inProgress,
+.issue_done,
+.issue_qa,
+.issue_codeReview {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.issue_toDo {
+  background: #fff5ee;
+  color: #fc7716;
+}
+
+.issue_inProgress {
+  background: #ebfbfc;
+  color: #3ad3dd;
+}
+
+.issue_done {
+  background: #f3fffd;
+  color: #01f0c5;
+}
+
+.issue_qa {
+  background: #f7e8ff;
+  color: #b216fc;
+}
+
+.issue_codeReview {
+  background: #f9f1dd;
+  color: #7e683c;
+}
+
+.card_viewmore,
+.card_viewmore :active {
+  color: #fcc200 !important;
+  font-size: 20px;
+}
+
+.pipeline_filter_indicator {
+  background: #fcc200;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 1px 4px -1px rgb(0 0 0 / 12%);
+  z-index: 9;
+  right: -6px;
+  top: -7px;
+  position: absolute;
+}
+
+.pipeline_columns {
+  background: #f2f2f2;
+  border-radius: 2px;
+  padding: 22px 22px 6px 22px;
+}
+
+.pipeline_columns_txt {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
