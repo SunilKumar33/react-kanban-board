@@ -10,3 +10,5 @@ Build A React Kanban Board with Drag & Drop by using react-beautiful-dnd
     - React beautiful dnd: https://github.com/atlassian/react-beautiful-dnd/
 
 # Preview
+
+https://main--admirable-pudding-869386.netlify.app/

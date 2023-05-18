@@ -38,7 +38,7 @@ const Kanban = () => {
 
   return (
     <div className="main_app">
-      <p className="board_txt">Board</p>
+      <p className="board_txt">Kanban Board</p>
       <DragDropContext onDragEnd={onDragEnd}>
         <main className="card_main" style={{ paddingBottom: "19px" }}>
           {kanbanData?.map((data) => {
